@@ -2,3 +2,7 @@ Django==3.2
 djangorestframework==3.12.4
 django-admin-interface==0.16.3
 psycopg2-binary==2.8.6
+drf-api-tracking==1.8.4
+dj-rest-auth==2.1.2
+django-allauth==0.44.0
+django-rest-auth==0.9.5

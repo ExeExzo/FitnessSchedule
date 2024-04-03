@@ -12,9 +12,9 @@ class BaseAdmin(admin.ModelAdmin):
 
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ['name', 'surname', 'role', 'gender', 'date_of_birth', 'phone']
+    list_display = ['username', 'first_name', 'last_name' ,'role', 'gender', 'date_of_birth', 'phone']
     list_filter = ['role']
-    search_fields = ['name', 'surname', 'phone']
+    search_fields = ['surname', 'phone']
 
 
 class GymAdmin(BaseAdmin):
@@ -28,8 +28,8 @@ class CoachAdmin(BaseAdmin):
     
 
 class ScheduleAdmin(BaseAdmin):
-    list_display = ['Coach', 'day_of_week', 'time_of_work'] + BaseAdmin.list_display
-    search_fields = ['Coach', 'day_of_week', 'time_of_work']
+    list_display = ['Coach', 'DayOfWeek', 'start_of_work', 'end_of_work'] + BaseAdmin.list_display
+    search_fields = ['Coach', 'DayOfWeek', 'start_of_work', 'end_of_work']
 
 
 class RecordAdmin(BaseAdmin):

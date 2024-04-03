@@ -14,3 +14,20 @@ class Gender(IntegerChoices):
     MALE = 1, _('male')
     FEMALE = 2, _("female")
     OTHER = 3, _("other")
+
+
+class Status(IntegerChoices):
+    PLANNED = 1, _('planned')
+    DONE = 2, _('done')
+    CANCELED = 3, _('canceled')
+    CHANGED = 4, _('changed')
+
+
+class DayOfWeek(IntegerChoices):
+    MONDAY = 1, _('Monday')
+    TUESDAY = 2, _('Tuesday')
+    WEDNESDAY = 3, _('Wednesday')
+    THURSDAY = 4, _('Thursday')
+    FRIDAY = 5, _('Friday')
+    SATURDAY = 6, _('Saturday')
+    SUNDAY = 7, _('Sunday')

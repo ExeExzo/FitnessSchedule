@@ -8,7 +8,8 @@ RUN apk update \
     gettext \
     gcc \
     musl-dev \
-    zlib-dev
+    zlib-dev \
+    libffi-dev
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
